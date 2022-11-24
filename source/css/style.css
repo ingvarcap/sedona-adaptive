@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/ptsans.woff2') format('woff2'), url('../fonts/ptsans.woff') format('woff');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/ptsans.woff2') format('woff2'), url('../fonts/ptsans.woff') format('woff');
+}
 *,
 *::before,
 *::after {
@@ -32,19 +46,14 @@ p {
   margin: 0;
   padding: 0;
 }
-@font-face {
-  font-family: 'PT Sans';
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url('../fonts/ptsans.woff2') format('woff2'), url('../fonts/ptsans.woff') format('woff');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  src: url('../fonts/ptsans.woff2') format('woff2'), url('../fonts/ptsans.woff') format('woff');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 .page {
   height: 100%;
@@ -60,6 +69,7 @@ p {
   min-height: 100%;
   margin: 0;
   color: #000000;
+  font-weight: normal;
   text-transform: uppercase;
 }
 .button {
@@ -68,8 +78,79 @@ p {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
+  font-weight: bold;
   background-color: #81b3d2;
   padding: 14px 32px;
+}
+.page-header {
+  background: #ffffff url('../img/back-mobile.png') center bottom no-repeat;
+  padding-bottom: 389px;
+  margin-bottom: 32px;
+}
+.main-nav__link {
+  display: block;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.advantages__slogan {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.advantages__reason {
+  color: #333333;
+  text-align: center;
+  margin-bottom: 27px;
+}
+.advantages__item {
+  background-color: #ffffff;
+  text-align: center;
+}
+.advantages__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.advantages__description,
+.advantages__number {
+  line-height: 21px;
+}
+.sity-advantages__list {
+  background-color: #ffffff;
+  text-align: left;
+}
+.sity-advantages__title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+.sity-advantages__description {
+  color: #333333;
+}
+.search {
+  text-align: center;
+}
+.search__title {
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+}
+.search__description {
+  line-height: 24px;
+  color: #333333;
+}
+.page-footer {
+  text-align: center;
+}
+.page-footer__item {
+  font-weight: bold;
+  font-size: 21px;
+}
+.copyright {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
