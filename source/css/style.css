@@ -10,7 +10,7 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  src: url('../fonts/ptsans.woff2') format('woff2'), url('../fonts/ptsans.woff') format('woff');
+  src: url('../fonts/ptsansbold.woff2') format('woff2'), url('../fonts/ptsansbold.woff') format('woff');
 }
 *,
 *::before,
@@ -55,11 +55,40 @@ h6 {
   margin: 0;
   padding: 0;
 }
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+}
+legend {
+  padding: 0;
+}
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+}
+textarea::-moz-placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: none;
+  color: #000000;
+}
+textarea::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: none;
+  color: #000000;
+}
 .page {
   height: 100%;
   font-size: 14px;
   line-height: 26px;
   font-family: 'PT Sans', 'Arial', sans-serif;
+  color: #000000;
+  text-transform: uppercase;
 }
 .page__body {
   display: grid;
@@ -68,9 +97,6 @@ h6 {
   min-width: 320px;
   min-height: 100%;
   margin: 0;
-  color: #000000;
-  font-weight: normal;
-  text-transform: uppercase;
 }
 .button {
   display: inline-block;
@@ -78,8 +104,9 @@ h6 {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   background-color: #81b3d2;
+  border: none;
   padding: 14px 32px;
 }
 .page-header {
@@ -91,13 +118,13 @@ h6 {
   display: block;
   font-size: 18px;
   line-height: 40px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
   background-color: #81b3d2;
 }
 .advantages__slogan {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -107,12 +134,16 @@ h6 {
   margin-bottom: 27px;
 }
 .advantages__item {
-  background-color: #ffffff;
+  background-color: #eeeeee;
   text-align: center;
+}
+.advantages__item--img {
+  background: #81b3d2;
+  color: #ffffff;
 }
 .advantages__title {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .advantages__description,
 .advantages__number {
@@ -125,7 +156,7 @@ h6 {
 .sity-advantages__title {
   color: #000000;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .sity-advantages__description {
   color: #333333;
@@ -146,11 +177,92 @@ h6 {
   text-align: center;
 }
 .page-footer__item {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
 }
 .copyright {
   font-size: 14px;
+}
+.intro {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.intro__header {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+.intro__description {
+  color: #333333;
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+.form {
+  font-weight: 700;
+}
+.field__label {
+  color: #333333;
+}
+.form__item:not(:last-child) {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0 28px 0;
+}
+.form__title {
+  font-size: 18px;
+}
+.field__input::-moz-placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: none;
+  color: #000000;
+}
+.field__input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: none;
+  color: #000000;
+}
+.feedback__label,
+.places__label {
+  text-transform: none;
+  font-size: 18px;
+}
+.review {
+  border-bottom: none;
+}
+.form__item:last-child {
+  border-bottom: none;
+}
+.description {
+  text-align: center;
+}
+.description__title {
+  font-size: 18px;
+}
+.description__text {
+  line-height: 24px;
+}
+.gallery-description__title {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.gallery-description__text {
+  line-height: 24px;
+  text-transform: none;
+  color: #333333;
+}
+.gallery-description__count {
+  line-height: 24px;
+  font-weight: 700;
+}
+.gallery__item {
+  border-top: 1px solid #e5e5e5;
+  padding: 22px 0 15px 0;
+}
+.gallery__item:last-child {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /*# sourceMappingURL=style.css.map */
