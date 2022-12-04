@@ -6,3 +6,18 @@
   color: @white;
   background-color: @blue;
 }
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-nav__item {
+    width: 20%;
+  }
+  .main-nav__item:nth-child(2) {
+    margin-right: 20%;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+}

@@ -21,7 +21,7 @@
             <a href="index.html" class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html" class="main-nav__link">Фото и видео</a>
+            <a href="catalog.html" class="main-nav__link">Фото и видео</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current">Форма Отзыва</a>
@@ -60,22 +60,24 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__item contacts">
+        <fieldset class="form__item form__item--contacts contacts">
           <h3 class="form__title">Контактная информация:</h3>
-          <div class="contacts__field field">
-            <label class="field__label" for="contact-tel"
-              >Контактный телефон*:
-              <input class="field__input field__input--tel" type="tel" id="contact-tel" placeholder="Введите телефон" />
-            </label>
-          </div>
-          <div class="contacts__field field">
-            <label class="field__label" for="contact-email"
-              >Электронная почта*:
-              <input class="field__input field__input--email" type="email" id="contact-email" placeholder="Введите e-mail" />
-            </label>
+          <div class="contacts__wrapper">
+            <div class="contacts__field field">
+              <label class="field__label" for="contact-tel"
+                >Контактный телефон*:
+                <input class="field__input field__input--tel" type="tel" id="contact-tel" placeholder="Введите телефон" />
+              </label>
+            </div>
+            <div class="contacts__field field">
+              <label class="field__label" for="contact-email"
+                >Электронная почта*:
+                <input class="field__input field__input--email" type="email" id="contact-email" placeholder="Введите e-mail" />
+              </label>
+            </div>
           </div>
         </fieldset>
-        <fieldset class="form__item feedback">
+        <fieldset class="form__item form__item--feedback feedback">
           <legend class="form__title">Вaше oбщее впечатление:</legend>
           <ul class="feedback__list">
             <li class="feedback__item">
@@ -89,7 +91,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__item places">
+        <fieldset class="form__item form__item--places places">
           <legend class="form__title">Посещенные достопримечательности:</legend>
           <ul class="places__list">
             <li class="places__item">
@@ -106,11 +108,12 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__item review">
+        <fieldset class="form__item form__item--review review">
           <h3 class="form__title">Опишите свои эмоции:</h3>
           <textarea class="review__area" name="textarea" id="textarea" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="review__button button" type="submit">Отправить отзыв</button>
+        <p class="review__text">* - обязательные поля</p>
       </section>
     </main>
     <footer class="page-footer">

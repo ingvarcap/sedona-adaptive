@@ -19,3 +19,22 @@
     border-bottom: 1px solid @grey-300;
   }
 }
+/*ADAPTIVE*/
+@media (min-width: @tablet-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery__item--large {
+    grid-column: span 2;
+  }
+}
+@media (min-width: @desktop-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery__item--large {
+    grid-column: span 3;
+  }
+}

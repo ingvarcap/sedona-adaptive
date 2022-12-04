@@ -1,6 +1,14 @@
 .page-footer {
   text-align: center;
 }
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+}
 .page-footer__item {
   font-weight: 700;
   font-size: 21px;

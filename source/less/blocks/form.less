@@ -4,3 +4,44 @@
 .field__label {
   color: @grey;
 }
+.review__text {
+  display: none;
+}
+/*ADAPTIVE*/
+@media (min-width: @tablet-width) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form__item--contacts,
+  .form__item--places,
+  .form__item--review {
+    grid-column: span 2;
+  }
+  .form__item--feedback {
+    order: -1;
+  }
+  .places__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .places__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .review__text {
+    display: block;
+  }
+}
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .places__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
